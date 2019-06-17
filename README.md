@@ -1,5 +1,5 @@
 # Formula1
-##Simple Mathematical formulas evaluator for PHP
+## Simple Mathematical formulas evaluator for PHP
 
 If you need to evaluate a formula with basic operators and variables, and
 
@@ -34,6 +34,6 @@ $f1 = new Formula1('-45+(fourty_one*2)-(6/(three+1))' , ['fourty_one'=>'82/2', '
 echo($f1->compute());
 ```
 
-##TODO
+## TODO
 
 * add math operations like sin, cos, sqrt etc...
