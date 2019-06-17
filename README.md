@@ -5,10 +5,12 @@ If you need to evaluate a formula with basic operators and variables, and
 
 * You dont want to use EVAL for obvious security reasons,
 * You don't want to rely on half the internet as dependancies, but prefer a single self-contained class,
-* You don't necessarily have the latest PHP version,
+* You don't necessarily have the latest PHP version, or Composer,
 * You want something readable that you could easily understand and customize,
+* You need something that knows about operators priority, unary operators, and parenthesis,
+* You want to be able to include sub-formulas inside your variables,
 
-Then you might like Formula1 ! ;-)
+...then you might like Formula1 ! ;-)
 
 
 **Simple usage no variables**
@@ -32,4 +34,6 @@ $f1 = new Formula1('-45+(fourty_one*2)-(6/(three+1))' , ['fourty_one'=>'82/2', '
 echo($f1->compute());
 ```
 
+##TODO
 
+* add math operations like sin, cos, sqrt etc...
