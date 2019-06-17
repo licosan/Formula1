@@ -6,8 +6,10 @@ class Formula1 {
 	private $dual_lp_ops = ['+','-'];
 	private $single_ops = ['+','-'];
 
-	public function __construct($formula, $params=[], $precision=0, $debug=false) {
+	public function __construct($formula, $params=[], $precision=null, $precision_mode=PHP_ROUND_HALF_UP) {
 		$this->params = $params;
+		$this->precision = $precision;
+		$this->precision_mode = $precision_mode;
 		$f = $this->replace_parenth($formula, 0);
 		if(strrpos($f, ')')>-1) {
 			echo('PARSING ERROR: Too many closing parenthesis !');
@@ -113,7 +115,8 @@ class Formula1 {
 	}
 
 	public function compute(){
-		return($this->comp($this->tree));
+		if($this->precision === null) return($this->comp($this->tree));
+		else return(round($this->comp($this->tree),$this->precision, $this->precision_mode));
 	}
 
 }
