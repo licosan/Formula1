@@ -3,12 +3,12 @@
 
 If you need to evaluate a formula with basic operators and variables, and
 
-* You dont want to use EVAL for obvious security reasons,
-* You don't want to rely on half the internet as dependancies, but prefer a single self-contained class,
-* You don't necessarily have the latest PHP version, or Composer,
-* You want something readable that you could easily understand and customize,
-* You need something that knows about operators priority, unary operators, and parenthesis,
-* You want to be able to include sub-formulas inside your variables,
+* *No eval:* You dont want to use EVAL for obvious security reasons,
+* *No dependancies:* You don't want to rely on half the internet as dependancies, but prefer a single self-contained class,
+* *Old PHP OK:* You don't necessarily have the latest PHP version, or Composer,
+* *No spaghetti:* You want something readable that you could easily understand and customize,
+* *Arithmetic rules OK:* You need something that knows about operators priority, unary operators, and parenthesis,
+* *Recursive eval:* You want to be able to include sub-formulas inside your variables,
 
 ...then you might like Formula1 ! ;-)
 
