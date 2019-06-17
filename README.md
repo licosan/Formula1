@@ -20,18 +20,24 @@ $f1 = new Formula1('-45+(41*2)-(6/(3+1))');
 echo($f1->compute()); // 35.5
 ```
 
+```PHP
+// With rounding (third and fourth params are precision and mode, like for the round function) 
+$f1 = new Formula1('2/6', [], 3);
+echo($f1->compute()); // 0.667
+```
+
 **Simple usage with variables**
 
 ```PHP
 $f1 = new Formula1('-45+(fourty_one*2)-(6/(three+1))' , ['fourty_one'=>41, 'three'=>3]);
-echo($f1->compute());
+echo($f1->compute()); // 35.5
 ```
 
 **Funky usage with variables that include formulas themselves (and recusrively)**
 
 ```PHP
 $f1 = new Formula1('-45+(fourty_one*2)-(6/(three+1))' , ['fourty_one'=>'82/2', 'three'=>'12/four', 'four'=>4]);
-echo($f1->compute());
+echo($f1->compute()); // 35.5
 ```
 
 ## TODO
