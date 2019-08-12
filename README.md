@@ -10,8 +10,8 @@ If you need to evaluate a formula with basic operators and variables, and
 * **Arithmetic rules OK:** You need something that knows about operators priority, unary operators, and parenthesis,
 * **Rounding OK:** You want to specify a precision and rounding mode for the result,
 * **Recursive eval:** You want to be able to include sub-formulas inside your variables,
-
-...then you might like Formula1 ! ;-)
+* **Arrays OK:** You need to use indexed or key-value arrays as variable inside the formula,
+...then you gonna like Formula1 ! ;-)
 
 
 **Simple usage no variables**
