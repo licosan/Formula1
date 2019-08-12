@@ -67,4 +67,4 @@ echo($f1->compute()."<br>\n"); //55
 
 * Add math operations like sin, cos, sqrt etc...
 * Would be better to give parameters in the compute, to allow one parsing-many evals, but needs rewrite of current parse-compute split.
-* The index of indexed arrays should be evaluated to allow formulas, but needs rewrite of current parse-compute split.
+* The index of indexed arrays should be evaluated to allow formulas as indexes, but needs rewrite of current parse-compute split.
