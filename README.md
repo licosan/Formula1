@@ -12,6 +12,7 @@ If you need to evaluate a formula with basic operators and variables, and
 * **Recursive eval:** You want to be able to include sub-formulas inside your variables,
 * **Arrays OK:** You need to use indexed or key-value arrays as variable inside the formula,
 * **functions OK:** You need to use basic math functions inside the formula,
+* **Errors OK:** You need to have a human-friendly message telling why the formula is wrong when it is,
 
 
 ...then you gonna like Formula1 ! ;-)
