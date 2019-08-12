@@ -11,6 +11,8 @@ If you need to evaluate a formula with basic operators and variables, and
 * **Rounding OK:** You want to specify a precision and rounding mode for the result,
 * **Recursive eval:** You want to be able to include sub-formulas inside your variables,
 * **Arrays OK:** You need to use indexed or key-value arrays as variable inside the formula,
+* **functions OK:** You need to use basic math functions inside the formula,
+
 
 ...then you gonna like Formula1 ! ;-)
 
@@ -63,8 +65,14 @@ $f1 = new Formula1('toto*myar["zorglub_99"]',['toto'=>10,'myar'=>['aaa'=>2.5,'zo
 echo($f1->compute()."<br>\n"); //55
 ```
 
+
+**Use offunctions**
+```PHP
+$f1 = new Formula1('2*5+sin(pi()/4)');
+echo($f1->compute()."<br>\n"); //7.071...
+```
+
 ## TODO
 
-* Add math operations like sin, cos, sqrt etc...
 * Would be better to give parameters in the compute, to allow one parsing-many evals, but needs rewrite of current parse-compute split.
 * The index of indexed arrays should be evaluated to allow formulas as indexes, but needs rewrite of current parse-compute split.
