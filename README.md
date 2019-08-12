@@ -79,5 +79,5 @@ echo($f1->compute()."<br>\n"); //7.071...
 * The index of indexed arrays should be evaluated to allow formulas as indexes, but needs rewrite of current parse-compute split.
 
 ## Known bugs
-* Won't allow unari operator directly binary operator like "5*-x" or "5+-x". 
+* Won't allow unary operator directly following a binary operator like "5*-x" or "5+-x". 
   Your can workaround by using parenthesis like "5*(-x)" or "5+(-x)"
