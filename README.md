@@ -11,7 +11,9 @@ If you need to evaluate a formula with basic operators and variables, and
 * **Rounding OK:** You want to specify a precision and rounding mode for the result,
 * **Recursive eval:** You want to be able to include sub-formulas inside your variables,
 * **Arrays OK:** You need to use indexed or key-value arrays as variable inside the formula,
+
 ...then you gonna like Formula1 ! ;-)
+
 
 
 **Simple usage no variables**
@@ -63,4 +65,6 @@ echo($f1->compute()."<br>\n"); //55
 
 ## TODO
 
-* add math operations like sin, cos, sqrt etc...
+* Add math operations like sin, cos, sqrt etc...
+* Would be better to give parameters in the compute, to allow one parsing-many evals, but needs rewrite of current parse-compute split.
+* The index of indexed arrays should be evaluated to allow formulas, but needs rewrite of current parse-compute split.
