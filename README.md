@@ -75,5 +75,5 @@ echo($f1->compute()."<br>\n"); //7.071...
 
 ## TODO
 
-* Would be better to give parameters in the compute, to allow one parsing-many evals, but needs rewrite of current parse-compute split.
+* Would be better to give parameters in the compute, to allow one parsing -many compute with differente variable values, but needs rewrite of current parse-compute split.
 * The index of indexed arrays should be evaluated to allow formulas as indexes, but needs rewrite of current parse-compute split.
