@@ -8,7 +8,7 @@ If you need to evaluate a formula with basic operators and variables, and
 * **Old PHP OK:** You don't necessarily have the latest PHP version, or Composer,
 * **No spaghetti:** You want something readable that you could easily understand and customize,
 * **Arithmetic rules OK:** You need something that knows about operators priority, unary operators, and parenthesis,
-* **Rounding OK:** You want to specifu a precision and rounding mode for the result,
+* **Rounding OK:** You want to specify a precision and rounding mode for the result,
 * **Recursive eval:** You want to be able to include sub-formulas inside your variables,
 
 ...then you might like Formula1 ! ;-)
@@ -23,7 +23,7 @@ echo($f1->compute()); // 35.5
 
 ```PHP
 // With rounding (third and fourth params are precision and mode, like for the round function) 
-$f1 = new Formula1('2/6', [], 3);
+$f1 = new Formula1('2/3', [], 3);
 echo($f1->compute()); // 0.667
 ```
 
