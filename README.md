@@ -75,8 +75,8 @@ echo($f1->compute()."<br>\n"); //7.071...
 
 ## TODO
 
-* Would be better to give parameters in the compute, to allow one parsing -many compute with differente variable values, but needs rewrite of current parse-compute split.
-* The index of indexed arrays should be evaluated to allow formulas as indexes, but needs rewrite of current parse-compute split.
+* Would be better to give parameters in the compute, to allow one parsing => many compute, with different values sets, but this needs a rewrite of the current parse-compute split.
+* The index of indexed arrays should be evaluated to allow formulas as indexes, but this needs a rewrite of the current parse-compute split.
 
 ## Known bugs
 * Won't allow unary operator directly following a binary operator like "5*-x" or "5+-x". 
