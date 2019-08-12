@@ -41,6 +41,26 @@ $f1 = new Formula1('-45+(fourty_one*2)-(6/(three+1))' , ['fourty_one'=>'82/2', '
 echo($f1->compute()); // 35.5
 ```
 
+**Display parsing error if any**
+
+```PHP
+$f1 = new Formula1('-45+(fourty_one*2)-(6/(three+1)))' , ['fourty_one'=>'82/2', 'three'=>'12/four', 'four'=>4]);
+if($f1->parse_error=='') echo($f1->compute()); 
+else echo($f1->parse_error."<br>\n"); // Too many closing parenthesis !
+```
+
+**Use of a indexed array**
+```PHP
+$f1 = new Formula1('toto*primes[6]',['toto'=>10,'primes'=>[2,3,5,7,11,13,17,19,23,29,31]]);
+echo($f1->compute()."<br>\n"); //170
+```
+
+**Use of a key-value array**
+```PHP
+$f1 = new Formula1('toto*myar["zorglub_99"]',['toto'=>10,'myar'=>['aaa'=>2.5,'zorglub_99'=>5.5]]);
+echo($f1->compute()."<br>\n"); //55
+```
+
 ## TODO
 
 * add math operations like sin, cos, sqrt etc...
